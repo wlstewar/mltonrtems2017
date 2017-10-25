@@ -8,13 +8,15 @@
  # See the file MLton-LICENSE for details.
  ##
 
+CODEGEN_FLAG := -codegen $(CODEGEN)
 SRC := $(shell cd .. && pwd)
 BUILD := $(SRC)/build
 BIN := $(BUILD)/bin
 LIB := $(BUILD)/lib
 MLTON := mlton
 TARGET := self
-FLAGS := -target $(TARGET)	\
+FLAGS +=$(CODEGEN_FLAG) \
+        -target $(TARGET)	\
 	-default-ann 'sequenceNonUnit warn' \
 	-default-ann 'warnUnused true'
 NAME := benchmark
@@ -51,3 +53,4 @@ QBFLAGS += -mlton "~/devel/mlton/mlton.svn.trunk.inline/build/bin/mlton"
 .PHONY: qtest
 qtest: $(NAME)
 	cd tests && ../benchmark $(QBFLAGS) $(QBENCH) && $(MAKE) clean
+print-%  : ; @echo $* = $($*)

@@ -1247,4 +1247,3 @@ structure Main : BMARK =
               rsize = 4.0
             })
   end;
-

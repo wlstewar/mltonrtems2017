@@ -96,7 +96,9 @@ structure x86Codegen = x86Codegen (structure CCodegen = CCodegen
 structure amd64Codegen = amd64Codegen (structure CCodegen = CCodegen
                                        structure Machine = Machine)
 
-
+structure i386RTEMS411Codegen = i386RTEMS411Codegen (structure Ffi = Ffi
+                                                     structure Machine = Machine)
+                                       
 (* ------------------------------------------------- *)
 (*                 Lookup Constant                   *)
 (* ------------------------------------------------- *)
@@ -667,6 +669,7 @@ fun preCodegen {input: MLBString.t}: Machine.Program.t =
           | Control.CCodegen => CCodegen.implementsPrim
           | Control.LLVMCodegen => LLVMCodegen.implementsPrim
           | Control.X86Codegen => x86Codegen.implementsPrim
+          | Control.i386RTEMS411Codegen => i386RTEMS411Codegen.implementsPrim
       val machine =
          Control.passTypeCheck
          {display = Control.Layouts Machine.Program.layouts,
@@ -717,7 +720,7 @@ fun compile {input: MLBString.t, outputC, outputLL, outputS}: unit =
                 ; (Control.trace (Control.Top, "C code gen")
                    CCodegen.output {program = machine,
                                     outputC = outputC}))
-          | Control.LLVMCodegen =>
+          | Control.LLVMCodegen => 
                (clearNames ()
                 ; (Control.trace (Control.Top, "llvm code gen")
                    LLVMCodegen.output {program = machine,
@@ -729,6 +732,11 @@ fun compile {input: MLBString.t, outputC, outputLL, outputS}: unit =
                    x86Codegen.output {program = machine,
                                       outputC = outputC,
                                       outputS = outputS}))
+          | Control.i386RTEMS411Codegen =>
+               (clearNames ()
+                ; (Control.trace (Control.Top, "i386-rtems4.11 code gen")
+                   i386RTEMS411Codegen.output {program = machine,
+                                    outputC = outputC}))
       val _ = Control.message (Control.Detail, PropertyList.stats)
       val _ = Control.message (Control.Detail, HashSet.stats)
    in

@@ -952,6 +952,8 @@ fun commandLine (args: string list): unit =
                               then AMD64Codegen
                            else if hasCodegen X86Codegen
                               then X86Codegen
+                           else if hasCodegen i386RTEMS411Codegen
+                              then i386RTEMS411Codegen
                            else CCodegen
                       | SOME Native =>
                            if hasCodegen AMD64Codegen
@@ -1101,6 +1103,7 @@ fun commandLine (args: string list): unit =
                        | CCodegen => Coalesce {limit = 4096}
                        | LLVMCodegen => Coalesce {limit = 4096}
                        | X86Codegen => ChunkPerFunc
+                       | i386RTEMS411Codegen => Coalesce {limit = 4096}
                        )
            | SOME c => c)
       val _ = if not (!Control.codegen = X86Codegen) andalso !Native.IEEEFP

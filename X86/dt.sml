@@ -1,0 +1,10 @@
+datatype x = i of int | s of string | tag | r of real | Fin
+fun toString y = case y of
+                      [Fin] => ()
+                    | (i e)::es => (print(Int.toString e ^ ", "); toString es)
+                    | (s e)::es => (print(e ^ ", "); toString es)
+                    | (tag)::es => (print("~rtems~, "); toString es)
+                    | (r e)::es => (print(Real.toString e ^ ", "); toString es)
+                    | _         => (print("whoops!"))
+val ls = [i 5, s "string?", s "string!", tag, s "??", r 4.2, r ~1.3, Fin]
+val _ = toString ls;

@@ -30,7 +30,7 @@ for prog in $bench; do
     esac
 
     ( cat $prog.sml ; echo "val _ = Main.doit (valOf (Int.fromString (hd (CommandLine.arguments ()))))" ) > $prog.main.sml
-    mlton -output $prog $prog.main.sml 1>/dev/null 2>/dev/null
+    ../../build/bin/mlton -output $prog $prog.main.sml 1>/dev/null 2>/dev/null
 
     n=0
     t=0

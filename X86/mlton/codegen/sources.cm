@@ -13,6 +13,7 @@ functor amd64Codegen
 functor CCodegen
 functor LLVMCodegen
 functor x86Codegen
+functor i386RTEMS411Codegen
 
 is
 

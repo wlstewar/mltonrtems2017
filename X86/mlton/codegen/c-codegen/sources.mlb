@@ -14,7 +14,9 @@ local
 
    c-codegen.sig
    c-codegen.fun
+   i386rtems411-codegen.fun
 in
    signature C_CODEGEN
    functor CCodegen
+   functor i386RTEMS411Codegen
 end
