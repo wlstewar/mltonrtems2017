@@ -1,9 +1,8 @@
 #include "platform.h"
 
 #if !HAS_FEROUND
-
+#warning !HAS_FEROUND
 #if (defined __i386__) || (defined __x86_64__)
-
 /* Macros for accessing the hardware control word. */
 #define _FPU_GETCW(cw)   __asm__ ("fnstcw %0" : "=m" (*&cw))
 #define _FPU_SETCW(cw)   __asm__ ("fldcw %0" : : "m" (*&cw))
@@ -44,7 +43,7 @@ static inline C_Int_t fesetround (C_Int_t mode) {
 }
 
 #elif (defined __UCLIBC__)
-
+#warning __UCLIBC__
 /* Use whatever we got from fpu_control.h for this CPU model */
 #define FE_MASK (FE_DOWNWARD|FE_TONEAREST|FE_TOWARDZERO|FE_UPWARD)
 
@@ -62,7 +61,6 @@ static inline int fesetround (int mode) {
         _FPU_SETCW (controlWord);
         return 0;
 }
-
 
 #else
 

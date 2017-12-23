@@ -38,7 +38,7 @@ typedef MLton_Rlim_t rlim_t;
 #define HAS_FEROUND FALSE
 #define HAS_REMAP FALSE
 #define HAS_SIGALTSTACK FALSE
-#define HAS_SPAWN TRUE
+#define HAS_SPAWN FALSE
 #define HAS_TIME_PROFILING FALSE
 #define HAS_MSG_DONTWAIT FALSE
 
@@ -130,6 +130,6 @@ int MLton_setrlimit (int resource, const struct rlimit *rlim);
 #define getrlimit MLton_getrlimit
 #define setrlimit MLton_setrlimit
 
-#define SPAWN_MODE _P_NOWAIT
+//#define SPAWN_MODE _P_NOWAIT
 
 #endif

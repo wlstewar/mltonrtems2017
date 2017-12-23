@@ -14,3 +14,6 @@ PRIVATE extern void die (const char *fmt, ...)
 PRIVATE extern void diee (const char *fmt, ...)
                           __attribute__ ((format(printf, 1, 2)))
                           __attribute__ ((noreturn));
+#ifndef __DIEE__
+#define __DIEE__
+#endif

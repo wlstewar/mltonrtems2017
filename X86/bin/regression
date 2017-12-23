@@ -85,8 +85,8 @@ mlton="$bin/mlton"
 if $cross; then
 	flags[${#flags[@]}]="-target"
 	flags[${#flags[@]}]="$crossTarget"
-	flags[${#flags[@]}]="-stop"
-	flags[${#flags[@]}]="g"
+	flags[${#flags[@]}]="-codegen"
+	flags[${#flags[@]}]="$crossTarget"
 fi
 cont='callcc.sml callcc2.sml callcc3.sml once.sml'
 flatArray='finalize.sml flat-array.sml flat-array.2.sml'

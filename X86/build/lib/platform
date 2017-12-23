@@ -63,6 +63,10 @@ OpenBSD*)
 ;;
 SunOS)
         HOST_OS='solaris'
+;;
+rtems)  
+        HOST_OS='rtems'
+
 	for arch in sparc amd64 i386 `uname -m`; do
 	        optisa $arch > /dev/null && break
 	done

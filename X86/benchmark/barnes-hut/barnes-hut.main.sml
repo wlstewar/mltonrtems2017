@@ -5,7 +5,7 @@
  *
  * The abstract interface of vectors and matrices in some dimension.
  *)
-val _ = print("???????????\n")
+
 signature VECTOR =
   sig
     type 'a vec
@@ -589,7 +589,7 @@ functor DataIO (S : SPACE) : DATA_IO =
 
     fun stopOutput () = (case (! outState)
            of NONE => ()
-            | (SOME{strm, ...}) => (outState := NONE)
+            | (SOME{strm, ...}) => (TextIO.closeOut strm; outState := NONE)
           (* end case *))
 
     fun initOutput {outfile, headline, nbody, tnow, dtime, eps, tol, dtout, tstop} = (
@@ -609,7 +609,7 @@ functor DataIO (S : SPACE) : DATA_IO =
                   dtime = dtime,
                   tout = tnow,
                   dtout = dtout,
-                  strm = TextIO.stdOut
+                  strm = TextIO.openOut outfile
                 }
           (* end case *))
 
@@ -901,7 +901,7 @@ functor Main (V : VECTOR) : sig
     val doit : unit -> unit
 
   end = struct
-    val _ = print ("hey!\n");
+
     structure V = V
     structure S = Space(V)
     structure L = Load(S)
@@ -1228,15 +1228,58 @@ app use [
     "vector3.sml"
   ];
 *)
-val _ = print("???\n")
 structure Main : BMARK =
   struct
-    val _ = print("pray for me \n")
     structure M3 = Main(Vector3);
-    val _ = print("whew\n")
+
     val name = "Barnes-Hut (3d)"
 
     fun testit strm = ()
 
-    fun doit n = ()
+    fun doit n = (
+          M3.srand 123;
+          M3.go {
+              output = fn _ => (),
+              bodies = M3.testdata n,
+              tnow = 0.0, tstop = 2.0,
+              dtime = 0.025, eps = 0.05, tol = 1.0,
+              rmin = M3.S.V.tabulate (fn _ => ~2.0),
+              rsize = 4.0
+            })
   end;
+val n = [1,
+         2,
+         4,
+         6,
+         8,
+         12,
+         16,
+         24,
+         32,
+         48,
+         64,
+         96,
+         128,
+         192,
+         256,
+         384,
+         512,
+         768,
+         1024,
+         1536,
+         2048,
+         3072,
+         4096,
+         6144,
+         8192,
+         12288,
+         16384,
+         24576]
+
+val n = [1]
+         
+fun goforit () = List.app (fn x => Main.doit(x)) n;
+val start = Time.now()
+val _ = goforit()
+val fin = Time.now()
+val _ = print("barnes-hut time:  " ^Time.toString(Time.-(fin, start)) ^ " seconds \n")

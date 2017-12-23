@@ -1,10 +1,11 @@
+fp="-msoft-float"
 #!/usr/bin/env bash
 
 # This script calls MLton.
 
-RTEMS="/home/oem/pickle/rtems/rtems-4.11-host/i386-rtems4.11/pc386/lib"
-RTEMS411="/home/oem/pickle/rtems/rtems-4.11-host/i386-rtems4.11/include"
-GMP="/home/oem/pickle/gmp_i386"
+RTEMS="/home/oem/pickle/rtems/rtems-4.11-host/sparc-rtems4.11/leon3/lib"
+RTEMS411="/home/oem/pickle/rtems/rtems-4.11-host/sparc-rtems4.11/include"
+GMP="/home/oem/pickle/gmp_sparc"
 GMP_LIB="$GMP/lib"
 
 set -e
@@ -103,7 +104,7 @@ doit "$lib" \
         -cc "$gcc"                                               \
         -cc-opt-quote "-I$lib/include"                           \
         -cc-opt '-O1 -fno-common'                                \
-        -cc-opt '-fno-strict-aliasing -fomit-frame-pointer -w'   \
+        -cc-opt ''   \
         -link-opt '-lm -lgmp'                                    \
         -llvm-llc-opt '-O2'                                      \
         -llvm-opt-opt '-mem2reg -O2'                             \
@@ -122,8 +123,8 @@ doit "$lib" \
         -target-cc-opt openbsd '-I/usr/local/include'            \
         -target-cc-opt aix '-maix64'                             \
         -target-cc-opt ia64 "$ia64hpux -mtune=itanium2"          \
-        -target-cc-opt sparc '-m32 -mcpu=v8 -Wa,-xarch=v8plusa'  \
-        -target-cc-opt rtems "-pipe -B$RTEMS -specs bsp_specs -qrtems -g -Wall -msoft-float -B$GMP -Wl,-Ttext,0x00100000 -mtune=i386 -DNO_FENV_H -L$GMP_LIB" \
+        -target-cc-opt sparc " -ffunction-sections -fdata-sections -mcpu=cypress $fp"  \
+        -target-cc-opt rtems "-pipe -B$RTEMS -specs bsp_specs -qrtems -g -Wall  -B$GMP -DNO_FENV_H -L$GMP_LIB" \
         -target-cc-opt x86                                       \
                 '-m32
                 -fno-strength-reduce
@@ -148,6 +149,7 @@ doit "$lib" \
         -target-link-opt openbsd '-L/usr/local/lib/'             \
         -target-link-opt solaris '-lnsl -lsocket -lrt'           \
         -target-link-opt x86 '-m32'                              \
-        -target-link-opt rtems  "-pipe -B$RTEMS -specs bsp_specs -qrtems -g -Wall -msoft-float -B$GMP -Wl,-Ttext,0x00100000 -mtune=i386 -DNO_FENV_H -L$GMP_LIB" \
+        -target-link-opt sparc " -ffunction-sections -fdata-sections -Wl,--gc-sections -mcpu=cypress $fp" \
+        -target-link-opt rtems  "-pipe -B$RTEMS -specs bsp_specs -qrtems -g -Wall -B$GMP -DNO_FENV_H -L$GMP_LIB" \
         -profile-exclude '\$\(SML_LIB\)'                         \
         "$@"

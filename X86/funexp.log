@@ -1,0 +1,213 @@
+benchmark/tests/fxp.sml:      fun ExpItem2String exp =
+benchmark/tests/fxp.sml:      fun Expected2String exp =
+benchmark/tests/fxp.sml:         fun expConCRpar c  = [EXP_CHAR 0wx29,EXP_CHAR c]
+benchmark/tests/fxp.sml:      fun expectedOrEnded (exp,ended) c =
+benchmark/tests/fxp.sml:      fun Expected2String exp =
+benchmark/tests/tyan.sml:    fun explode (M l) = map (fn v => (v>>16,v andb 65535)) l
+benchmark/tests/model-elimination.sml:    fun expand ancestors g cont (state as {env, ...}) =
+benchmark/tests/zebra.sml:            fun explore r =
+benchmark/tests/hamlet.sml:    fun explode longid = longid
+benchmark/tests/hamlet.sml:    fun EXPProgram(I, exp, program_opt) =
+benchmark/tests/barnes-hut.sml:    fun expandBox (nd as S.Body{pos, ...}, box as S.Space{rmin, rsize, root}) = (
+benchmark/tests/barnes-hut.sml:    fun explode {x, y, z} = [x, y, z]
+benchmark/tests/barnes-hut.main.sml:    fun expandBox (nd as S.Body{pos, ...}, box as S.Space{rmin, rsize, root}) = (
+benchmark/tests/barnes-hut.main.sml:    fun explode {x, y, z} = [x, y, z]
+benchmark/tests/DLXSimulator.sml:      fun exp2 0 = 1
+benchmark/tests/tensor.sml:        fun exp (x, y) =
+benchmark/tests/tensor.sml:        fun exp (x, y) =
+benchmark/tests/tensor.sml:        fun exp a = map Number.exp a
+benchmark/tests/tensor.sml:    fun exp a = map Number.exp a
+benchmark/barnes-hut/barnes-hut.main.sml:    fun expandBox (nd as S.Body{pos, ...}, box as S.Space{rmin, rsize, root}) = (
+benchmark/barnes-hut/barnes-hut.main.sml:    fun explode {x, y, z} = [x, y, z]
+build/lib/sml/smlnj-lib/HTML4/html4-parser.sml:fun expect expectedVisit pstrm =
+build/lib/sml/smlnj-lib/HTML4/html4-parser.sml:        fun expectationError () =
+build/lib/sml/smlnj-lib/HTML4/html4-parser.sml:fun expectEnterNT nt = expect (H4U.EnterNT (Atom.atom nt))
+build/lib/sml/smlnj-lib/HTML4/html4-parser.sml:fun expectExitNT nt = expect (H4U.ExitNT (Atom.atom nt))
+build/lib/sml/smlnj-lib/HTML4/html4-parser.sml:fun expectVisitT tokStr = expect (H4U.VisitT tokStr)
+build/lib/sml/smlnj-lib/HTML4/html4-parser.sml:fun expectEnterNTInDomain ntMap pstrm =
+build/lib/sml/smlnj-lib/HTML4/html4-parser.sml:        fun expectationError () =
+build/lib/sml/smlnj-lib/Util/dynamic-array.sml:    fun expand(arr, oldlen, newlen, dflt) = let
+build/lib/sml/smlnj-lib/Util/utf8.sml:    fun explode s = rev(fold (op ::) [] s)
+build/lib/sml/smlnj-lib/Util/dynamic-array-fn.sml:    fun expand (arr,oldlen,newlen,dflt) = let
+build/lib/sml/mlrisc-lib/library/dynamic-array.sml:     fun expandTo(arr as ARRAY(_, d, _), N) = update(arr, N-1, d)
+build/lib/sml/mlrisc-lib/library/orig-dynamic-array.sml:     fun expandTo(arr as ARRAY(_, d, _), N) = update(arr, N-1, d)
+build/lib/sml/mlrisc-lib/flowgraph/cfgExpandCopies.sml:      fun expand(I.COPY{k,  dst, src, tmp, ...}) = let
+build/lib/sml/mlrisc-lib/flowgraph/cfgExpandCopies.sml:      fun expandInstrs(_, CFG.BLOCK{insns, ...}) = 
+build/lib/sml/mlrisc-lib/mips/mltree/mips.sml:      fun expr(T.REG(_,r)) = r
+build/lib/sml/mlrisc-lib/mips/backpatch/mipsJumps.sml:  fun expand(instr, size, pos) = error "expand"
+build/lib/sml/mlrisc-lib/Tools/MDL/mdl-gen-cells.sml:           let fun exp _ (LOCexp(id,e,_)) =
+build/lib/sml/mlrisc-lib/Tools/MDL/mdl-gen-asm.sml:                   let fun exp _ (ASMexp(STRINGasm s)) = emitIt(mkString s)
+build/lib/sml/mlrisc-lib/Tools/MDL/mdl-rtl-comp.sml:               fun exp ==> (e as TYPEexp t) =
+build/lib/sml/mlrisc-lib/Tools/MDL/mdl-rtl-comp.sml:       fun exp ==> (LOCexp(m,e,NONE)) = APPexp(APP("$",cellOf m),e)
+build/lib/sml/mlrisc-lib/Tools/MDL/mdl-rtl-comp.sml:   fun expandSyntacticSugar(md, rtlDecls) =
+build/lib/sml/mlrisc-lib/Tools/MDL/mdl-rtl-comp.sml:       fun exp ==> (e as LITexp(INTlit _))  = APP("intConst", e)
+build/lib/sml/mlrisc-lib/Tools/MDL/mdl-rtl-comp.sml:                    fun exp _ (e as RTLexp [COMPOSITErtl _]) = e
+build/lib/sml/mlrisc-lib/Tools/nowhere/nowhere.sml:               fun exp _ (e as CASEexp(r,cs)) = (* case expr *)
+build/lib/sml/mlrisc-lib/Tools/FakeSMLAst/ast-rewrite.sml:   let fun exp e =
+build/lib/sml/mlrisc-lib/Tools/Doc/rewrite-gen.tex:        \FUN expr (ID x) = ID(String.map Char.toUpper x)
+build/lib/sml/mlrisc-lib/Tools/Doc/rewrite-gen.tex:          \FUN exp (OPER("+",[x])) = x
+build/lib/sml/mlrisc-lib/Tools/RewriteGen/rewrite-gen.sml:   let fun exp _ (A.APPexp(A.IDexp(A.IDENT(["Generic"],"rewrite")),
+build/lib/sml/mlrisc-lib/Tools/MatchCompiler/match-compiler.sml:       fun expandColumn(m as MATRIX{rows, paths, ...}, i) = 
+build/lib/sml/mlrisc-lib/Tools/MatchCompiler/match-compiler.sml:           fun expand(WILDpat::ps, this) = expand(ps, this)
+build/lib/sml/mlrisc-lib/Tools/MatchCompiler/match-compiler.sml:             let fun expand([], _) = bug "expand NOT" 
+build/lib/sml/mlrisc-lib/Tools/MatchCompiler/match-compiler.sml:             let fun expand(row as {pats, dfa, nested, guard}) =
+build/lib/sml/mlrisc-lib/Tools/MatchCompiler/match-gen.sml:            fun exp _ (e as A.IDexp(A.IDENT([],x))) = 
+build/lib/sml/mlrisc-lib/sparc/backpatch/sparcJumps.sml:  fun expandImm(immed,instr) = 
+build/lib/sml/mlrisc-lib/sparc/backpatch/sparcJumps.sml:  fun expand(I.ANNOTATION{i, ...}, size, pos) = expand(i, size, pos)
+build/lib/sml/mlrisc-lib/amd64/backpatch/amd64Jumps.sml:  fun expand(I.ANNOTATION{i,...}, size, loc) = expand(i, size, loc)
+build/lib/sml/mlrisc-lib/x86/backpatch/x86Jumps.sml:  fun expand(I.ANNOTATION{i,...}, size, loc) = expand(i, size, loc)
+build/lib/sml/mlrisc-lib/alpha/mltree/alpha.sml:                  fun exp2 n = Word.<<(0w1, n)
+build/lib/sml/mlrisc-lib/alpha/backpatch/alphaJumps.sml:  fun expand(I.ANNOTATION{i,...}, size, pos) = expand(i,size,pos)
+build/lib/sml/mlrisc-lib/hppa/backpatch/hppaJumps.sml:  fun expand(I.ANNOTATION{i,...},size,pos) = expand(i,size,pos)
+build/lib/sml/mlrisc-lib/ppc/backpatch/ppcJumps.sml:  fun expand(I.ANNOTATION{i, ...}, size, pos) = expand(i, size, pos)
+build/lib/sml/ckit-lib/src/ast-utils/simplifier/simplify-ast.sml:      fun exp2ctype (EXPR (_,aid,_)) = aid2ctype aid
+build/lib/sml/ckit-lib/src/ast-utils/simplifier/simplify-ast.sml:      fun exp2stmt exp = coreStmt2stmt (Expr (SOME exp))
+build/lib/sml/ckit-lib/src/ast-utils/simplifier/simplify-ast.sml:		     fun expOpt2stmt NONE = []
+build/lib/sml/ckit-lib/src/ast/build-ast.sml:			     | checkForFun(PT.MARKexpression(loc, expr)) = checkForFun expr
+build/lib/sml/ckit-lib/src/ast/build-ast.sml:			 checkForFun expr_parseTree
+build/lib/sml/ckit-lib/src/parser/grammar/c.lex.sml:fun explode s = CharVector.foldr (fn (c, l) => str c :: l) [] s
+build/lib/sml/ckit-lib/src/parser/grammar/c.lex:fun explode s = CharVector.foldr (fn (c, l) => str c :: l) [] s
+build/lib/sml/basis/sml-nj/sml-nj.sml:      fun exportFn (file: string, f) =
+build/lib/sml/basis/sml-nj/sml-nj.sml:      fun exportML (f: string): bool =
+build/lib/sml/basis/real/IEEE-real.sml:            fun exp (state: 'a, failure, success) =
+build/lib/sml/basis/system/timer.sml:            fun export (T r) = r
+build/lib/sml/basis/general/sml90.sml:      fun explode s = List.map String.str (String.explode s)
+grep: input file ‘funexp.log’ is also the output
+lib/smlnj-lib/smlnj-lib/HTML4/html4-parser.sml:fun expect expectedVisit pstrm =
+lib/smlnj-lib/smlnj-lib/HTML4/html4-parser.sml:        fun expectationError () =
+lib/smlnj-lib/smlnj-lib/HTML4/html4-parser.sml:fun expectEnterNT nt = expect (H4U.EnterNT (Atom.atom nt))
+lib/smlnj-lib/smlnj-lib/HTML4/html4-parser.sml:fun expectExitNT nt = expect (H4U.ExitNT (Atom.atom nt))
+lib/smlnj-lib/smlnj-lib/HTML4/html4-parser.sml:fun expectVisitT tokStr = expect (H4U.VisitT tokStr)
+lib/smlnj-lib/smlnj-lib/HTML4/html4-parser.sml:fun expectEnterNTInDomain ntMap pstrm =
+lib/smlnj-lib/smlnj-lib/HTML4/html4-parser.sml:        fun expectationError () =
+lib/smlnj-lib/smlnj-lib/Util/dynamic-array.sml:    fun expand(arr, oldlen, newlen, dflt) = let
+lib/smlnj-lib/smlnj-lib/Util/utf8.sml:    fun explode s = rev(fold (op ::) [] s)
+lib/smlnj-lib/smlnj-lib/Util/dynamic-array-fn.sml:    fun expand (arr,oldlen,newlen,dflt) = let
+lib/mllpt-lib/ml-lpt/common/expand-file.sml:    fun expandTemplate {src, dst, hooks} = (let
+lib/mllpt-lib/ml-lpt/ml-antlr/BackEnds/SML/expand-file.sml:    fun expand' {src, dst, hooks} = (let
+lib/mllpt-lib/ml-lpt/ml-antlr/BackEnds/SML/expand-file.sml:    fun expand {src, dst, hooks} = 
+lib/mllpt-lib/ml-lpt/ml-antlr/examples/calc/calc.g.sml:fun exp_PROD_1_ACT (EQ, ID, env, exp1, exp2, KW_in, KW_let, EQ_SPAN : (Lex.pos * Lex.pos), ID_SPAN : (Lex.pos * Lex.pos), exp1_SPAN : (Lex.pos * Lex.pos), exp2_SPAN : (Lex.pos * Lex.pos), KW_in_SPAN : (Lex.pos * Lex.pos), KW_let_SPAN : (Lex.pos * Lex.pos), FULL_SPAN : (Lex.pos * Lex.pos), nums, vars) = 
+lib/mllpt-lib/ml-lpt/ml-antlr/examples/calc/calc.g.sml:fun exp_NT (env_RES) (strm) = let
+lib/mllpt-lib/ml-lpt/ml-antlr/examples/calc/calc.g.sml:      fun exp_PROD_1 (strm) = let
+lib/mllpt-lib/ml-lpt/ml-antlr/examples/calc/calc.g.sml:      fun exp_PROD_2 (strm) = let
+lib/mllpt-lib/ml-lpt/ml-antlr/examples/dragon/dragon.g.sml:fun exp_PROD_1_exp_exp_PROD_1_SUBRULE_1_PROD_1_ACT (simple_exp, RELOP, simple_exp_SPAN : (Lex.pos * Lex.pos), RELOP_SPAN : (Lex.pos * Lex.pos), FULL_SPAN : (Lex.pos * Lex.pos)) = 
+lib/mllpt-lib/ml-lpt/ml-antlr/examples/dragon/dragon.g.sml:fun exp_PROD_1_ACT (SR, simple_exp, SR_SPAN : (Lex.pos * Lex.pos), simple_exp_SPAN : (Lex.pos * Lex.pos), FULL_SPAN : (Lex.pos * Lex.pos)) = 
+lib/mllpt-lib/ml-lpt/ml-antlr/examples/dragon/dragon.g.sml:fun exp_NT (strm) = let
+lib/mllpt-lib/ml-lpt/ml-antlr/examples/dragon/dragon.g.sml:      fun exp_PROD_1_SUBRULE_1_NT (strm) = let
+lib/mllpt-lib/ml-lpt/ml-antlr/examples/dragon/dragon.g.sml:      fun exp_PROD_1_SUBRULE_1_PRED (strm) = (case (lex(strm))
+lib/mlrisc-lib/MLRISC/library/dynamic-array.sml:     fun expandTo(arr as ARRAY(_, d, _), N) = update(arr, N-1, d)
+lib/mlrisc-lib/MLRISC/library/orig-dynamic-array.sml:     fun expandTo(arr as ARRAY(_, d, _), N) = update(arr, N-1, d)
+lib/mlrisc-lib/MLRISC/flowgraph/cfgExpandCopies.sml:      fun expand(I.COPY{k,  dst, src, tmp, ...}) = let
+lib/mlrisc-lib/MLRISC/flowgraph/cfgExpandCopies.sml:      fun expandInstrs(_, CFG.BLOCK{insns, ...}) = 
+lib/mlrisc-lib/MLRISC/mips/mltree/mips.sml:      fun expr(T.REG(_,r)) = r
+lib/mlrisc-lib/MLRISC/mips/backpatch/mipsJumps.sml:  fun expand(instr, size, pos) = error "expand"
+lib/mlrisc-lib/MLRISC/Tools/MDL/mdl-gen-cells.sml:           let fun exp _ (LOCexp(id,e,_)) =
+lib/mlrisc-lib/MLRISC/Tools/MDL/mdl-gen-asm.sml:                   let fun exp _ (ASMexp(STRINGasm s)) = emitIt(mkString s)
+lib/mlrisc-lib/MLRISC/Tools/MDL/mdl-rtl-comp.sml:               fun exp ==> (e as TYPEexp t) =
+lib/mlrisc-lib/MLRISC/Tools/MDL/mdl-rtl-comp.sml:       fun exp ==> (LOCexp(m,e,NONE)) = APPexp(APP("$",cellOf m),e)
+lib/mlrisc-lib/MLRISC/Tools/MDL/mdl-rtl-comp.sml:   fun expandSyntacticSugar(md, rtlDecls) =
+lib/mlrisc-lib/MLRISC/Tools/MDL/mdl-rtl-comp.sml:       fun exp ==> (e as LITexp(INTlit _))  = APP("intConst", e)
+lib/mlrisc-lib/MLRISC/Tools/MDL/mdl-rtl-comp.sml:                    fun exp _ (e as RTLexp [COMPOSITErtl _]) = e
+lib/mlrisc-lib/MLRISC/Tools/nowhere/nowhere.sml:               fun exp _ (e as CASEexp(r,cs)) = (* case expr *)
+lib/mlrisc-lib/MLRISC/Tools/FakeSMLAst/ast-rewrite.sml:   let fun exp e =
+lib/mlrisc-lib/MLRISC/Tools/Doc/rewrite-gen.tex:        \FUN expr (ID x) = ID(String.map Char.toUpper x)
+lib/mlrisc-lib/MLRISC/Tools/Doc/rewrite-gen.tex:          \FUN exp (OPER("+",[x])) = x
+lib/mlrisc-lib/MLRISC/Tools/RewriteGen/rewrite-gen.sml:   let fun exp _ (A.APPexp(A.IDexp(A.IDENT(["Generic"],"rewrite")),
+lib/mlrisc-lib/MLRISC/Tools/MatchCompiler/match-compiler.sml:       fun expandColumn(m as MATRIX{rows, paths, ...}, i) = 
+lib/mlrisc-lib/MLRISC/Tools/MatchCompiler/match-compiler.sml:           fun expand(WILDpat::ps, this) = expand(ps, this)
+lib/mlrisc-lib/MLRISC/Tools/MatchCompiler/match-compiler.sml:             let fun expand([], _) = bug "expand NOT" 
+lib/mlrisc-lib/MLRISC/Tools/MatchCompiler/match-compiler.sml:             let fun expand(row as {pats, dfa, nested, guard}) =
+lib/mlrisc-lib/MLRISC/Tools/MatchCompiler/match-gen.sml:            fun exp _ (e as A.IDexp(A.IDENT([],x))) = 
+lib/mlrisc-lib/MLRISC/sparc/backpatch/sparcJumps.sml:  fun expandImm(immed,instr) = 
+lib/mlrisc-lib/MLRISC/sparc/backpatch/sparcJumps.sml:  fun expand(I.ANNOTATION{i, ...}, size, pos) = expand(i, size, pos)
+lib/mlrisc-lib/MLRISC/amd64/backpatch/amd64Jumps.sml:  fun expand(I.ANNOTATION{i,...}, size, loc) = expand(i, size, loc)
+lib/mlrisc-lib/MLRISC/x86/backpatch/x86Jumps.sml:  fun expand(I.ANNOTATION{i,...}, size, loc) = expand(i, size, loc)
+lib/mlrisc-lib/MLRISC/alpha/mltree/alpha.sml:                  fun exp2 n = Word.<<(0w1, n)
+lib/mlrisc-lib/MLRISC/alpha/backpatch/alphaJumps.sml:  fun expand(I.ANNOTATION{i,...}, size, pos) = expand(i,size,pos)
+lib/mlrisc-lib/MLRISC/hppa/backpatch/hppaJumps.sml:  fun expand(I.ANNOTATION{i,...},size,pos) = expand(i,size,pos)
+lib/mlrisc-lib/MLRISC/ppc/backpatch/ppcJumps.sml:  fun expand(I.ANNOTATION{i, ...}, size, pos) = expand(i, size, pos)
+lib/ckit-lib/ckit/src/ast-utils/simplifier/simplify-ast.sml:      fun exp2ctype (EXPR (_,aid,_)) = aid2ctype aid
+lib/ckit-lib/ckit/src/ast-utils/simplifier/simplify-ast.sml:      fun exp2stmt exp = coreStmt2stmt (Expr (SOME exp))
+lib/ckit-lib/ckit/src/ast-utils/simplifier/simplify-ast.sml:		     fun expOpt2stmt NONE = []
+lib/ckit-lib/ckit/src/ast/build-ast.sml:			     | checkForFun(PT.MARKexpression(loc, expr)) = checkForFun expr
+lib/ckit-lib/ckit/src/ast/build-ast.sml:			 checkForFun expr_parseTree
+lib/ckit-lib/ckit/src/parser/grammar/c.lex.sml:fun explode s = CharVector.foldr (fn (c, l) => str c :: l) [] s
+lib/ckit-lib/ckit/src/parser/grammar/c.lex:fun explode s = CharVector.foldr (fn (c, l) => str c :: l) [] s
+lib/mlton/basic/choice-pattern.sml:fun expandTree (t: t): string list =
+lib/mlton/basic/choice-pattern.sml:fun expand (s: string): string list Result.t =
+lib/mlton/basic/my-dirs.sml:      fun exportFn(name, f) =
+lib/mlton/basic/my-dirs.sml:      fun exportML name =
+lib/mlton/basic/export.sml:fun exportFn(file, command) =
+basis-library/sml-nj/sml-nj.sml:      fun exportFn (file: string, f) =
+basis-library/sml-nj/sml-nj.sml:      fun exportML (f: string): bool =
+basis-library/real/IEEE-real.sml:            fun exp (state: 'a, failure, success) =
+basis-library/system/timer.sml:            fun export (T r) = r
+basis-library/general/sml90.sml:      fun explode s = List.map String.str (String.explode s)
+util/cm2mlb/cm2mlb.sml:   fun export () =
+util/cmcat/cmcat.sml:   fun export () =
+build_working/lib/sml/smlnj-lib/HTML4/html4-parser.sml:fun expect expectedVisit pstrm =
+build_working/lib/sml/smlnj-lib/HTML4/html4-parser.sml:        fun expectationError () =
+build_working/lib/sml/smlnj-lib/HTML4/html4-parser.sml:fun expectEnterNT nt = expect (H4U.EnterNT (Atom.atom nt))
+build_working/lib/sml/smlnj-lib/HTML4/html4-parser.sml:fun expectExitNT nt = expect (H4U.ExitNT (Atom.atom nt))
+build_working/lib/sml/smlnj-lib/HTML4/html4-parser.sml:fun expectVisitT tokStr = expect (H4U.VisitT tokStr)
+build_working/lib/sml/smlnj-lib/HTML4/html4-parser.sml:fun expectEnterNTInDomain ntMap pstrm =
+build_working/lib/sml/smlnj-lib/HTML4/html4-parser.sml:        fun expectationError () =
+build_working/lib/sml/smlnj-lib/Util/dynamic-array.sml:    fun expand(arr, oldlen, newlen, dflt) = let
+build_working/lib/sml/smlnj-lib/Util/utf8.sml:    fun explode s = rev(fold (op ::) [] s)
+build_working/lib/sml/smlnj-lib/Util/dynamic-array-fn.sml:    fun expand (arr,oldlen,newlen,dflt) = let
+build_working/lib/sml/mlrisc-lib/library/dynamic-array.sml:     fun expandTo(arr as ARRAY(_, d, _), N) = update(arr, N-1, d)
+build_working/lib/sml/mlrisc-lib/library/orig-dynamic-array.sml:     fun expandTo(arr as ARRAY(_, d, _), N) = update(arr, N-1, d)
+build_working/lib/sml/mlrisc-lib/flowgraph/cfgExpandCopies.sml:      fun expand(I.COPY{k,  dst, src, tmp, ...}) = let
+build_working/lib/sml/mlrisc-lib/flowgraph/cfgExpandCopies.sml:      fun expandInstrs(_, CFG.BLOCK{insns, ...}) = 
+build_working/lib/sml/mlrisc-lib/mips/mltree/mips.sml:      fun expr(T.REG(_,r)) = r
+build_working/lib/sml/mlrisc-lib/mips/backpatch/mipsJumps.sml:  fun expand(instr, size, pos) = error "expand"
+build_working/lib/sml/mlrisc-lib/Tools/MDL/mdl-gen-cells.sml:           let fun exp _ (LOCexp(id,e,_)) =
+build_working/lib/sml/mlrisc-lib/Tools/MDL/mdl-gen-asm.sml:                   let fun exp _ (ASMexp(STRINGasm s)) = emitIt(mkString s)
+build_working/lib/sml/mlrisc-lib/Tools/MDL/mdl-rtl-comp.sml:               fun exp ==> (e as TYPEexp t) =
+build_working/lib/sml/mlrisc-lib/Tools/MDL/mdl-rtl-comp.sml:       fun exp ==> (LOCexp(m,e,NONE)) = APPexp(APP("$",cellOf m),e)
+build_working/lib/sml/mlrisc-lib/Tools/MDL/mdl-rtl-comp.sml:   fun expandSyntacticSugar(md, rtlDecls) =
+build_working/lib/sml/mlrisc-lib/Tools/MDL/mdl-rtl-comp.sml:       fun exp ==> (e as LITexp(INTlit _))  = APP("intConst", e)
+build_working/lib/sml/mlrisc-lib/Tools/MDL/mdl-rtl-comp.sml:                    fun exp _ (e as RTLexp [COMPOSITErtl _]) = e
+build_working/lib/sml/mlrisc-lib/Tools/nowhere/nowhere.sml:               fun exp _ (e as CASEexp(r,cs)) = (* case expr *)
+build_working/lib/sml/mlrisc-lib/Tools/FakeSMLAst/ast-rewrite.sml:   let fun exp e =
+build_working/lib/sml/mlrisc-lib/Tools/Doc/rewrite-gen.tex:        \FUN expr (ID x) = ID(String.map Char.toUpper x)
+build_working/lib/sml/mlrisc-lib/Tools/Doc/rewrite-gen.tex:          \FUN exp (OPER("+",[x])) = x
+build_working/lib/sml/mlrisc-lib/Tools/RewriteGen/rewrite-gen.sml:   let fun exp _ (A.APPexp(A.IDexp(A.IDENT(["Generic"],"rewrite")),
+build_working/lib/sml/mlrisc-lib/Tools/MatchCompiler/match-compiler.sml:       fun expandColumn(m as MATRIX{rows, paths, ...}, i) = 
+build_working/lib/sml/mlrisc-lib/Tools/MatchCompiler/match-compiler.sml:           fun expand(WILDpat::ps, this) = expand(ps, this)
+build_working/lib/sml/mlrisc-lib/Tools/MatchCompiler/match-compiler.sml:             let fun expand([], _) = bug "expand NOT" 
+build_working/lib/sml/mlrisc-lib/Tools/MatchCompiler/match-compiler.sml:             let fun expand(row as {pats, dfa, nested, guard}) =
+build_working/lib/sml/mlrisc-lib/Tools/MatchCompiler/match-gen.sml:            fun exp _ (e as A.IDexp(A.IDENT([],x))) = 
+build_working/lib/sml/mlrisc-lib/sparc/backpatch/sparcJumps.sml:  fun expandImm(immed,instr) = 
+build_working/lib/sml/mlrisc-lib/sparc/backpatch/sparcJumps.sml:  fun expand(I.ANNOTATION{i, ...}, size, pos) = expand(i, size, pos)
+build_working/lib/sml/mlrisc-lib/amd64/backpatch/amd64Jumps.sml:  fun expand(I.ANNOTATION{i,...}, size, loc) = expand(i, size, loc)
+build_working/lib/sml/mlrisc-lib/x86/backpatch/x86Jumps.sml:  fun expand(I.ANNOTATION{i,...}, size, loc) = expand(i, size, loc)
+build_working/lib/sml/mlrisc-lib/alpha/mltree/alpha.sml:                  fun exp2 n = Word.<<(0w1, n)
+build_working/lib/sml/mlrisc-lib/alpha/backpatch/alphaJumps.sml:  fun expand(I.ANNOTATION{i,...}, size, pos) = expand(i,size,pos)
+build_working/lib/sml/mlrisc-lib/hppa/backpatch/hppaJumps.sml:  fun expand(I.ANNOTATION{i,...},size,pos) = expand(i,size,pos)
+build_working/lib/sml/mlrisc-lib/ppc/backpatch/ppcJumps.sml:  fun expand(I.ANNOTATION{i, ...}, size, pos) = expand(i, size, pos)
+build_working/lib/sml/ckit-lib/src/ast-utils/simplifier/simplify-ast.sml:      fun exp2ctype (EXPR (_,aid,_)) = aid2ctype aid
+build_working/lib/sml/ckit-lib/src/ast-utils/simplifier/simplify-ast.sml:      fun exp2stmt exp = coreStmt2stmt (Expr (SOME exp))
+build_working/lib/sml/ckit-lib/src/ast-utils/simplifier/simplify-ast.sml:		     fun expOpt2stmt NONE = []
+build_working/lib/sml/ckit-lib/src/ast/build-ast.sml:			     | checkForFun(PT.MARKexpression(loc, expr)) = checkForFun expr
+build_working/lib/sml/ckit-lib/src/ast/build-ast.sml:			 checkForFun expr_parseTree
+build_working/lib/sml/ckit-lib/src/parser/grammar/c.lex.sml:fun explode s = CharVector.foldr (fn (c, l) => str c :: l) [] s
+build_working/lib/sml/ckit-lib/src/parser/grammar/c.lex:fun explode s = CharVector.foldr (fn (c, l) => str c :: l) [] s
+build_working/lib/sml/basis/sml-nj/sml-nj.sml:      fun exportFn (file: string, f) =
+build_working/lib/sml/basis/sml-nj/sml-nj.sml:      fun exportML (f: string): bool =
+build_working/lib/sml/basis/real/IEEE-real.sml:            fun exp (state: 'a, failure, success) =
+build_working/lib/sml/basis/system/timer.sml:            fun export (T r) = r
+build_working/lib/sml/basis/general/sml90.sml:      fun explode s = List.map String.str (String.explode s)
+mlton/front-end/mlb-front-end.fun:      fun expandPathVars (path, seen, region) =
+mlton/front-end/ml.grm.sml:fun EXPORT (p1,p2) = Token.TOKEN (ParserData.LrTable.T 72,(ParserData.MlyValue.VOID,p1,p2))
+mlton/closure-convert/lambda-free.fun:      fun exp (e, s) =
+mlton/control/control-flags.sml:      fun expert ctrl = Id.expert (id ctrl)
+mlton/ssa/inline.fun:      fun expSize (size, max) (doExp, _) exp =
+mlton/ast/ast-core.fun:fun expNodeName e =
+mlton/xml/shrink.fun:            fun expansive (e: PrimExp.t) = finish (e, rest ())
+mlton/xml/shrink.fun:            fun expression (e: Exp.t): Dec.t list =
+mlton/backend/rssa.fun:            fun expand (ss: Statement.t vector list, t: Transfer.t)
+mlton/elaborate/elaborate-core.fun:fun export {attributes: ImportExportAttribute.t list,
+mlton/elaborate/elaborate-env.fun:      fun explainDoesNotAdmitEquality (t: t): Layout.t =
+mlton/elaborate/elaborate-env.fun:      fun explainDoesNotAdmitEquality (s: t): Layout.t =
+mlton/elaborate/elaborate-env.fun:      fun explainDoesNotAdmitEquality (s: t): Layout.t =

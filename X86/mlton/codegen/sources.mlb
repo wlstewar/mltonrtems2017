@@ -18,4 +18,6 @@ in
    functor LLVMCodegen
    functor x86Codegen
    functor i386RTEMS411Codegen
+   functor sparcRTEMS411Codegen
+   
 end

@@ -16,7 +16,7 @@ CC := gcc -std=gnu99
 AR := ar rc
 RANLIB := ranlib
 else
-CC := $(TARGET)-gcc -std=gnu99
+CC := $(TARGET)-gcc -std=c99
 AR := $(TARGET)-ar rc
 RANLIB := $(TARGET)-ranlib
 endif
@@ -81,7 +81,7 @@ WARNXCFLAGS += -Wnested-externs
 # WARNXCFLAGS += -Wunreachable-code
 
 XCFLAGS := -fno-common $(WARNXCFLAGS)
-OPTXCFLAGS := -Wdisabled-optimization -O2 -fomit-frame-pointer
+OPTXCFLAGS := -Wdisabled-optimization -O1
 DEBUGXCFLAGS := -DASSERT=1 -Wno-uninitialized -O0 -g
 PICXCFLAGS :=
 
@@ -125,8 +125,11 @@ XCFLAGS += -maix64
 AR := ar -X 64 rc
 endif
 
+
+
+#### CHANGED MCPU=V8 TO MCPU=LEON3 FOR RTEMS
 ifeq ($(TARGET_ARCH), sparc)
-XCFLAGS += -m32 -mcpu=v8 -Wa,-xarch=v8plusa
+XCFLAGS += -fdata-sections -ffunction-sections $(fp) -mcpu=cypress -Wl,--gc-sections
 endif
 
 ifeq ($(TARGET_ARCH), x86)
@@ -203,9 +206,9 @@ c-types.h: gen/c-types.h
 ml-types.h: gen/ml-types.h
 	cp $< $@
 gen/c-types.h gen/c-types.sml gen/ml-types.h:
-	cp rtems/c-types.sml gen/
-	cp rtems/ml-types.h gen/
-	cp rtems/c-types.h gen/
+	cp rtems-$(TARGET_ARCH)/c-types.sml gen/
+	cp rtems-$(TARGET_ARCH)/ml-types.h gen/
+	cp rtems-$(TARGET_ARCH)/c-types.h gen/
 
 ### basis-ffi.h  gen/basis-ffi.sml ###
 
@@ -251,14 +254,14 @@ gdtoa/arithchk.c: gdtoa/README
 	@touch $@
 
 gdtoa/arith.h: 
-	cp rtems/arith.h gdtoa/arith.h
+	cp rtems-$(TARGET_ARCH)/arith.h gdtoa/arith.h
 #	cd gdtoa && ./arithchk.out >arith.h
 
 gdtoa/qnan.c: gdtoa/README
 	@touch $@
 
 gdtoa/gd_qnan.h: 
-	cp rtems/gd_qnan.h gdtoa
+	cp rtems-$(TARGET_ARCH)/gd_qnan.h gdtoa
 
 gdtoa/%-pic.o: gdtoa/%.c gdtoa/arith.h gdtoa/gd_qnan.h
 	$(CC) $(PICCFLAGS) -w -DINFNAN_CHECK -c -o $@ $<
@@ -314,7 +317,7 @@ gc-pic.o: $(GCCFILES)
 gc-gdb.o: $(GCCFILES)
 gc.o:     $(GCCFILES)
 
-gc.c_XCFLAGS := -Wno-unreachable-code
+gc.c_XCFLAGS := -g -Wno-unreachable-code
 
 basis/Real/Math-pic.o:  basis/Real/Math-fns.h
 basis/Real/Math-gdb.o:  basis/Real/Math-fns.h
@@ -354,7 +357,7 @@ libmlton-pic.a: $(MLTON_PIC_OBJS)
 ### gen/sizes ###
 
 gen/sizes:
-	cp rtems/sizes gen/
+	cp rtems-$(TARGET_ARCH)/sizes gen/
 
 ######
 

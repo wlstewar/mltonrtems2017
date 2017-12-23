@@ -42,6 +42,7 @@ signature CONTROL_FLAGS =
              | LLVMCodegen
              | X86Codegen
              | i386RTEMS411Codegen
+             | sparcRTEMS411Codegen
             val all: t list
             val toString: t -> string
          end

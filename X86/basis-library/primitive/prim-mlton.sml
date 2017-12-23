@@ -211,7 +211,7 @@ structure Platform =
              | NetBSD
              | OpenBSD
              | Solaris
-	     | Rtems
+	         | Rtems
 
             val host: t =
                case _const "MLton_Platform_OS_host": String8.string; of

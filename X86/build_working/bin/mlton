@@ -123,7 +123,7 @@ doit "$lib" \
         -target-cc-opt aix '-maix64'                             \
         -target-cc-opt ia64 "$ia64hpux -mtune=itanium2"          \
         -target-cc-opt sparc '-m32 -mcpu=v8 -Wa,-xarch=v8plusa'  \
-        -target-cc-opt rtems "-pipe -B$RTEMS -specs bsp_specs -qrtems -g -Wall -msoft-float -B$GMP -Wl,-Ttext,0x00100000 -mtune=i386 -DNO_FENV_H -L$GMP_LIB" \
+        -target-cc-opt rtems "-pipe -B$RTEMS -specs bsp_specs -qrtems -g -Wall -B$GMP -Wl,-Ttext,0x00100000 -mtune=i386 -DNO_FENV_H -L$GMP_LIB" \
         -target-cc-opt x86                                       \
                 '-m32
                 -fno-strength-reduce

@@ -1,0 +1,1625 @@
+In file included from args-create.0.c:131:0:
+/home/oem/pickle/take2/X86/build/lib/include/c-main.h:23:13: warning: 'MLton_callFromC' defined but not used [-Wunused-function]
+ static void MLton_callFromC () {                                        \
+             ^
+/home/oem/pickle/take2/X86/build/lib/include/c-main.h:54:1: note: in expansion of macro 'MLtonCallFromC'
+ MLtonCallFromC                                                          \
+ ^
+args-create.0.c:703:1: note: in expansion of macro 'MLtonMain'
+ MLtonMain (8, 0xCA4D7FC4, 72, TRUE, PROFILE_NONE, FALSE, 0, 158)
+ ^
+In file included from /home/oem/pickle/take2/X86/build/lib/include/c-chunk.h:216:0,
+                 from args-create.1.c:131:
+/home/oem/pickle/take2/X86/build/lib/include/basis/coerce.h: In function 'Real32_castToWord32':
+/home/oem/pickle/take2/X86/build/lib/include/basis/coerce.h:46:1: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+ cast(Real32, Word32)
+ ^
+/home/oem/pickle/take2/X86/build/lib/include/basis/coerce.h:42:5: warning: incompatible implicit declaration of built-in function 'memcpy'
+     memcpy(&y, &x, sizeof(t));                  \
+     ^
+/home/oem/pickle/take2/X86/build/lib/include/basis/coerce.h:46:1: note: in expansion of macro 'cast'
+ cast(Real32, Word32)
+ ^
+/home/oem/pickle/take2/X86/build/lib/include/basis/coerce.h: In function 'Word32_castToReal32':
+/home/oem/pickle/take2/X86/build/lib/include/basis/coerce.h:42:5: warning: incompatible implicit declaration of built-in function 'memcpy'
+     memcpy(&y, &x, sizeof(t));                  \
+     ^
+/home/oem/pickle/take2/X86/build/lib/include/basis/coerce.h:47:1: note: in expansion of macro 'cast'
+ cast(Word32, Real32)
+ ^
+/home/oem/pickle/take2/X86/build/lib/include/basis/coerce.h: In function 'Real64_castToWord64':
+/home/oem/pickle/take2/X86/build/lib/include/basis/coerce.h:42:5: warning: incompatible implicit declaration of built-in function 'memcpy'
+     memcpy(&y, &x, sizeof(t));                  \
+     ^
+/home/oem/pickle/take2/X86/build/lib/include/basis/coerce.h:48:1: note: in expansion of macro 'cast'
+ cast(Real64, Word64)
+ ^
+/home/oem/pickle/take2/X86/build/lib/include/basis/coerce.h: In function 'Word64_castToReal64':
+/home/oem/pickle/take2/X86/build/lib/include/basis/coerce.h:42:5: warning: incompatible implicit declaration of built-in function 'memcpy'
+     memcpy(&y, &x, sizeof(t));                  \
+     ^
+/home/oem/pickle/take2/X86/build/lib/include/basis/coerce.h:49:1: note: in expansion of macro 'cast'
+ cast(Word64, Real64)
+ ^
+In file included from /home/oem/pickle/take2/X86/build/lib/include/c-chunk.h:218:0,
+                 from args-create.1.c:131:
+/home/oem/pickle/take2/X86/build/lib/include/basis/Real/Real-ops.h: In function 'Real32_fetch':
+/home/oem/pickle/take2/X86/build/lib/include/basis/Real/Real-ops.h:30:5: warning: incompatible implicit declaration of built-in function 'memcpy'
+     memcpy(&r, rp, sizeof(Real##size##_t));                             \
+     ^
+/home/oem/pickle/take2/X86/build/lib/include/basis/Real/Real-ops.h:55:1: note: in expansion of macro 'misaligned'
+ misaligned(size)
+ ^
+/home/oem/pickle/take2/X86/build/lib/include/basis/Real/Real-ops.h:57:1: note: in expansion of macro 'all'
+ all(32)
+ ^
+/home/oem/pickle/take2/X86/build/lib/include/basis/Real/Real-ops.h: In function 'Real32_store':
+/home/oem/pickle/take2/X86/build/lib/include/basis/Real/Real-ops.h:35:5: warning: incompatible implicit declaration of built-in function 'memcpy'
+     memcpy(rp, &r, sizeof(Real##size##_t));                             \
+     ^
+/home/oem/pickle/take2/X86/build/lib/include/basis/Real/Real-ops.h:55:1: note: in expansion of macro 'misaligned'
+ misaligned(size)
+ ^
+/home/oem/pickle/take2/X86/build/lib/include/basis/Real/Real-ops.h:57:1: note: in expansion of macro 'all'
+ all(32)
+ ^
+/home/oem/pickle/take2/X86/build/lib/include/basis/Real/Real-ops.h: In function 'Real32_move':
+/home/oem/pickle/take2/X86/build/lib/include/basis/Real/Real-ops.h:40:5: warning: incompatible implicit declaration of built-in function 'memcpy'
+     memcpy(dst, src, sizeof(Real##size##_t));                           \
+     ^
+/home/oem/pickle/take2/X86/build/lib/include/basis/Real/Real-ops.h:55:1: note: in expansion of macro 'misaligned'
+ misaligned(size)
+ ^
+/home/oem/pickle/take2/X86/build/lib/include/basis/Real/Real-ops.h:57:1: note: in expansion of macro 'all'
+ all(32)
+ ^
+/home/oem/pickle/take2/X86/build/lib/include/basis/Real/Real-ops.h: In function 'Real64_fetch':
+/home/oem/pickle/take2/X86/build/lib/include/basis/Real/Real-ops.h:30:5: warning: incompatible implicit declaration of built-in function 'memcpy'
+     memcpy(&r, rp, sizeof(Real##size##_t));                             \
+     ^
+/home/oem/pickle/take2/X86/build/lib/include/basis/Real/Real-ops.h:55:1: note: in expansion of macro 'misaligned'
+ misaligned(size)
+ ^
+/home/oem/pickle/take2/X86/build/lib/include/basis/Real/Real-ops.h:58:1: note: in expansion of macro 'all'
+ all(64)
+ ^
+/home/oem/pickle/take2/X86/build/lib/include/basis/Real/Real-ops.h: In function 'Real64_store':
+/home/oem/pickle/take2/X86/build/lib/include/basis/Real/Real-ops.h:35:5: warning: incompatible implicit declaration of built-in function 'memcpy'
+     memcpy(rp, &r, sizeof(Real##size##_t));                             \
+     ^
+/home/oem/pickle/take2/X86/build/lib/include/basis/Real/Real-ops.h:55:1: note: in expansion of macro 'misaligned'
+ misaligned(size)
+ ^
+/home/oem/pickle/take2/X86/build/lib/include/basis/Real/Real-ops.h:58:1: note: in expansion of macro 'all'
+ all(64)
+ ^
+/home/oem/pickle/take2/X86/build/lib/include/basis/Real/Real-ops.h: In function 'Real64_move':
+/home/oem/pickle/take2/X86/build/lib/include/basis/Real/Real-ops.h:40:5: warning: incompatible implicit declaration of built-in function 'memcpy'
+     memcpy(dst, src, sizeof(Real##size##_t));                           \
+     ^
+/home/oem/pickle/take2/X86/build/lib/include/basis/Real/Real-ops.h:55:1: note: in expansion of macro 'misaligned'
+ misaligned(size)
+ ^
+/home/oem/pickle/take2/X86/build/lib/include/basis/Real/Real-ops.h:58:1: note: in expansion of macro 'all'
+ all(64)
+ ^
+In file included from /home/oem/pickle/take2/X86/build/lib/include/c-chunk.h:220:0,
+                 from args-create.1.c:131:
+/home/oem/pickle/take2/X86/build/lib/include/basis/Word/Word-ops.h: In function 'Word64_fetch':
+/home/oem/pickle/take2/X86/build/lib/include/basis/Word/Word-ops.h:50:5: warning: incompatible implicit declaration of built-in function 'memcpy'
+     memcpy(&w, wp, sizeof(Word##size##_t));                             \
+     ^
+/home/oem/pickle/take2/X86/build/lib/include/basis/Word/Word-ops.h:100:1: note: in expansion of macro 'misaligned'
+ misaligned(64)
+ ^
+/home/oem/pickle/take2/X86/build/lib/include/basis/Word/Word-ops.h: In function 'Word64_store':
+/home/oem/pickle/take2/X86/build/lib/include/basis/Word/Word-ops.h:55:5: warning: incompatible implicit declaration of built-in function 'memcpy'
+     memcpy(wp, &w, sizeof(Word##size##_t));                             \
+     ^
+/home/oem/pickle/take2/X86/build/lib/include/basis/Word/Word-ops.h:100:1: note: in expansion of macro 'misaligned'
+ misaligned(64)
+ ^
+/home/oem/pickle/take2/X86/build/lib/include/basis/Word/Word-ops.h: In function 'Word64_move':
+/home/oem/pickle/take2/X86/build/lib/include/basis/Word/Word-ops.h:60:5: warning: incompatible implicit declaration of built-in function 'memcpy'
+     memcpy(dst, src, sizeof(Word##size##_t));                           \
+     ^
+/home/oem/pickle/take2/X86/build/lib/include/basis/Word/Word-ops.h:100:1: note: in expansion of macro 'misaligned'
+ misaligned(64)
+ ^
+args-create.1.c: In function 'Chunk0':
+args-create.1.c:547:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_999);
+  ^
+args-create.1.c:547:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:549:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_998);
+  ^
+args-create.1.c:549:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:552:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_997);
+  ^
+args-create.1.c:552:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:554:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_996);
+  ^
+args-create.1.c:554:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:557:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 20) = 118;
+                  ^
+args-create.1.c:575:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_3, L_992);
+  ^
+args-create.1.c:575:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:581:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_3, L_995);
+  ^
+args-create.1.c:581:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:612:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_1000);
+  ^
+args-create.1.c:612:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:615:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 12) = 123;
+                  ^
+args-create.1.c:676:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_949);
+  ^
+args-create.1.c:676:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:696:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_914);
+  ^
+args-create.1.c:696:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:711:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_911);
+  ^
+args-create.1.c:711:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:735:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_909);
+  ^
+args-create.1.c:735:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:752:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_908);
+  ^
+args-create.1.c:752:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:754:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_907);
+  ^
+args-create.1.c:754:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:756:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_906);
+  ^
+args-create.1.c:756:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:759:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 20) = 138;
+                  ^
+args-create.1.c:774:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_905);
+  ^
+args-create.1.c:774:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:802:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_897);
+  ^
+args-create.1.c:802:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:804:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_896);
+  ^
+args-create.1.c:804:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:807:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 20) = 137;
+                  ^
+args-create.1.c:825:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_2, L_891);
+  ^
+args-create.1.c:825:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:833:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_3, L_895);
+  ^
+args-create.1.c:833:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:879:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 12) = 139;
+                  ^
+args-create.1.c:898:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 12) = 140;
+                  ^
+args-create.1.c:910:17: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 4) = 141;
+                 ^
+args-create.1.c:921:17: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 4) = 143;
+                 ^
+args-create.1.c:955:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_978);
+  ^
+args-create.1.c:955:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:993:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_2, L_973);
+  ^
+args-create.1.c:993:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:997:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_971);
+  ^
+args-create.1.c:997:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1016:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 12) = 146;
+                  ^
+args-create.1.c:1020:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 12) = 149;
+                  ^
+args-create.1.c:1039:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_975);
+  ^
+args-create.1.c:1039:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1044:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 12) = 148;
+                  ^
+args-create.1.c:1056:17: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 4) = 142;
+                 ^
+args-create.1.c:1094:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 12) = 144;
+                  ^
+args-create.1.c:1098:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_981);
+  ^
+args-create.1.c:1098:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1101:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 12) = 121;
+                  ^
+args-create.1.c:1143:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_969);
+  ^
+args-create.1.c:1143:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1146:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 12) = 147;
+                  ^
+args-create.1.c:1208:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_939);
+  ^
+args-create.1.c:1208:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1211:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 20) = 145;
+                  ^
+args-create.1.c:1241:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_866);
+  ^
+args-create.1.c:1241:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1244:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (S(Word32, 4), L_865);
+  ^
+args-create.1.c:1244:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1246:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_832);
+  ^
+args-create.1.c:1246:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1253:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (S(Word32, 20), L_824);
+  ^
+args-create.1.c:1253:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1257:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_823);
+  ^
+args-create.1.c:1257:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1260:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (S(Word32, 4), L_822);
+  ^
+args-create.1.c:1260:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1271:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_4, L_792);
+  ^
+args-create.1.c:1271:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1273:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (S(Word32, 20), L_791);
+  ^
+args-create.1.c:1273:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1282:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_4, L_794);
+  ^
+args-create.1.c:1282:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1289:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_3, L_798);
+  ^
+args-create.1.c:1289:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1294:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (S(Word32, 4), L_818);
+  ^
+args-create.1.c:1294:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1298:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_817);
+  ^
+args-create.1.c:1298:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1301:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_816);
+  ^
+args-create.1.c:1301:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1303:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_815);
+  ^
+args-create.1.c:1303:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1306:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 36) = 127;
+                  ^
+args-create.1.c:1322:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_814);
+  ^
+args-create.1.c:1322:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1324:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_812);
+  ^
+args-create.1.c:1324:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1327:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (S(Word32, 20), L_811);
+  ^
+args-create.1.c:1327:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1345:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 20) = 128;
+                  ^
+args-create.1.c:1351:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 129;
+                  ^
+args-create.1.c:1378:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_821);
+  ^
+args-create.1.c:1378:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1394:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_831);
+  ^
+args-create.1.c:1394:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1397:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 28) = 130;
+                  ^
+args-create.1.c:1410:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_830);
+  ^
+args-create.1.c:1410:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1411:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (S(Word32, 4), L_829);
+  ^
+args-create.1.c:1411:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1457:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_861);
+  ^
+args-create.1.c:1457:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1479:17: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 8) = 106;
+                 ^
+args-create.1.c:1485:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 20) = 131;
+                  ^
+args-create.1.c:1489:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_659);
+  ^
+args-create.1.c:1489:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1491:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_659);
+  ^
+args-create.1.c:1491:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1499:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_658);
+  ^
+args-create.1.c:1499:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1504:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_657);
+  ^
+args-create.1.c:1504:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1507:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_656);
+  ^
+args-create.1.c:1507:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1510:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_2, L_654);
+  ^
+args-create.1.c:1510:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1514:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_653);
+  ^
+args-create.1.c:1514:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1524:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 36) = 119;
+                  ^
+args-create.1.c:1528:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_776);
+  ^
+args-create.1.c:1528:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1538:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_670);
+  ^
+args-create.1.c:1538:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1541:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_2, L_668);
+  ^
+args-create.1.c:1541:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1555:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_2, L_762);
+  ^
+args-create.1.c:1555:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1558:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (S(Word32, 4), L_693);
+  ^
+args-create.1.c:1558:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1562:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_691);
+  ^
+args-create.1.c:1562:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1568:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_690);
+  ^
+args-create.1.c:1568:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1575:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_688);
+  ^
+args-create.1.c:1575:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1578:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 12) = 90;
+                  ^
+args-create.1.c:1592:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_687);
+  ^
+args-create.1.c:1592:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1594:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_685);
+  ^
+args-create.1.c:1594:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1614:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 20) = 125;
+                  ^
+args-create.1.c:1643:17: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 4) = 1;
+                 ^
+args-create.1.c:1656:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_696);
+  ^
+args-create.1.c:1656:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1662:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_738);
+  ^
+args-create.1.c:1662:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1671:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_704);
+  ^
+args-create.1.c:1671:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1674:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_2, L_703);
+  ^
+args-create.1.c:1674:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1686:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_724);
+  ^
+args-create.1.c:1686:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1690:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_722);
+  ^
+args-create.1.c:1690:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1696:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_721);
+  ^
+args-create.1.c:1696:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1703:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_720);
+  ^
+args-create.1.c:1703:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1706:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 12) = 89;
+                  ^
+args-create.1.c:1720:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_719);
+  ^
+args-create.1.c:1720:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1722:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_717);
+  ^
+args-create.1.c:1722:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1742:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 20) = 124;
+                  ^
+args-create.1.c:1769:17: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 4) = 2;
+                 ^
+args-create.1.c:1809:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_2, L_734);
+  ^
+args-create.1.c:1809:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1833:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_745);
+  ^
+args-create.1.c:1833:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1836:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_2, L_744);
+  ^
+args-create.1.c:1836:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1848:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_2, L_748);
+  ^
+args-create.1.c:1848:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1882:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_2, L_758);
+  ^
+args-create.1.c:1882:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1927:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_2, L_772);
+  ^
+args-create.1.c:1927:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:1943:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 12) = 126;
+                  ^
+args-create.1.c:1970:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 12) = 122;
+                  ^
+args-create.1.c:1990:17: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 8) = 107;
+                 ^
+args-create.1.c:1996:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 20) = 132;
+                  ^
+args-create.1.c:2001:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 20) = 133;
+                  ^
+args-create.1.c:2050:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_856);
+  ^
+args-create.1.c:2050:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2053:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 20) = 134;
+                  ^
+args-create.1.c:2082:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_848);
+  ^
+args-create.1.c:2082:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2085:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 20) = 135;
+                  ^
+args-create.1.c:2107:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_867);
+  ^
+args-create.1.c:2107:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2110:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 20) = 136;
+                  ^
+args-create.1.c:2145:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_650);
+  ^
+args-create.1.c:2145:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2156:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_651);
+  ^
+args-create.1.c:2156:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2159:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 36) = 120;
+                  ^
+args-create.1.c:2194:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_617);
+  ^
+args-create.1.c:2194:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2196:17: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 8) = 109;
+                 ^
+args-create.1.c:2202:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 28) = 103;
+                  ^
+args-create.1.c:2210:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_621);
+  ^
+args-create.1.c:2210:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2213:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_620);
+  ^
+args-create.1.c:2213:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2221:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_632);
+  ^
+args-create.1.c:2221:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2224:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_631);
+  ^
+args-create.1.c:2224:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2227:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_630);
+  ^
+args-create.1.c:2227:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2232:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_2, L_626);
+  ^
+args-create.1.c:2232:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2242:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_628);
+  ^
+args-create.1.c:2242:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2276:17: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 8) = 108;
+                 ^
+args-create.1.c:2282:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 20) = 112;
+                  ^
+args-create.1.c:2287:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 115;
+                  ^
+args-create.1.c:2316:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 52) = 116;
+                  ^
+args-create.1.c:2344:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_3, L_603);
+  ^
+args-create.1.c:2344:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2345:17: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 8) = 109;
+                 ^
+args-create.1.c:2351:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 28) = 103;
+                  ^
+args-create.1.c:2356:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_3, L_612);
+  ^
+args-create.1.c:2356:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2359:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_4, L_611);
+  ^
+args-create.1.c:2359:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2365:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_2, L_607);
+  ^
+args-create.1.c:2365:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2375:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_609);
+  ^
+args-create.1.c:2375:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2380:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 28) = 114;
+                  ^
+args-create.1.c:2410:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_593);
+  ^
+args-create.1.c:2410:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2413:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_592);
+  ^
+args-create.1.c:2413:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2416:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_2, L_590);
+  ^
+args-create.1.c:2416:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2420:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_589);
+  ^
+args-create.1.c:2420:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2430:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 36) = 104;
+                  ^
+args-create.1.c:2462:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_598);
+  ^
+args-create.1.c:2462:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2465:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 28) = 110;
+                  ^
+args-create.1.c:2487:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_587);
+  ^
+args-create.1.c:2487:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2490:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 28) = 111;
+                  ^
+args-create.1.c:2507:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_582);
+  ^
+args-create.1.c:2507:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2518:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_583);
+  ^
+args-create.1.c:2518:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2521:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 105;
+                  ^
+args-create.1.c:2532:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_601);
+  ^
+args-create.1.c:2532:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2535:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 28) = 113;
+                  ^
+args-create.1.c:2547:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_634);
+  ^
+args-create.1.c:2547:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2549:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_634);
+  ^
+args-create.1.c:2549:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2552:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 20) = 117;
+                  ^
+args-create.1.c:2586:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_560);
+  ^
+args-create.1.c:2586:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2589:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_34);
+  ^
+args-create.1.c:2589:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2652:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_558);
+  ^
+args-create.1.c:2652:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2656:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 28) = 9;
+                  ^
+args-create.1.c:2678:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_554);
+  ^
+args-create.1.c:2678:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2682:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_553);
+  ^
+args-create.1.c:2682:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2686:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_552);
+  ^
+args-create.1.c:2686:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2690:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_542);
+  ^
+args-create.1.c:2690:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2694:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_541);
+  ^
+args-create.1.c:2694:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2695:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 28) = 10;
+                  ^
+args-create.1.c:2708:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_540);
+  ^
+args-create.1.c:2708:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2710:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_538);
+  ^
+args-create.1.c:2710:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2724:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 36) = 12;
+                  ^
+args-create.1.c:2737:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_537);
+  ^
+args-create.1.c:2737:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2739:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_535);
+  ^
+args-create.1.c:2739:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2783:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_534);
+  ^
+args-create.1.c:2783:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2785:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_532);
+  ^
+args-create.1.c:2785:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2806:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_531);
+  ^
+args-create.1.c:2806:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2819:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_510);
+  ^
+args-create.1.c:2819:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2832:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_2, L_509);
+  ^
+args-create.1.c:2832:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2834:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_2, L_507);
+  ^
+args-create.1.c:2834:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2836:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_506);
+  ^
+args-create.1.c:2836:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2842:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_504);
+  ^
+args-create.1.c:2842:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2845:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_78);
+  ^
+args-create.1.c:2845:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2868:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_76);
+  ^
+args-create.1.c:2868:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2879:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 60) = 13;
+                  ^
+args-create.1.c:2899:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_2, L_502);
+  ^
+args-create.1.c:2899:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2906:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_4, L_501);
+  ^
+args-create.1.c:2906:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2912:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_2, L_496);
+  ^
+args-create.1.c:2912:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2914:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_2, L_494);
+  ^
+args-create.1.c:2914:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2916:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_493);
+  ^
+args-create.1.c:2916:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2922:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_491);
+  ^
+args-create.1.c:2922:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2925:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_98);
+  ^
+args-create.1.c:2925:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2948:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 60) = 14;
+                  ^
+args-create.1.c:2968:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_2, L_489);
+  ^
+args-create.1.c:2968:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2975:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_4, L_488);
+  ^
+args-create.1.c:2975:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2981:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_2, L_483);
+  ^
+args-create.1.c:2981:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2983:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_2, L_481);
+  ^
+args-create.1.c:2983:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2985:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_480);
+  ^
+args-create.1.c:2985:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2991:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_478);
+  ^
+args-create.1.c:2991:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:2994:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_118);
+  ^
+args-create.1.c:2994:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:3017:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 60) = 15;
+                  ^
+args-create.1.c:3037:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_2, L_476);
+  ^
+args-create.1.c:3037:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:3044:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_4, L_475);
+  ^
+args-create.1.c:3044:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:3048:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_470);
+  ^
+args-create.1.c:3048:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:3052:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_468);
+  ^
+args-create.1.c:3052:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:3057:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_467);
+  ^
+args-create.1.c:3057:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:3061:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_465);
+  ^
+args-create.1.c:3061:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:3066:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_444);
+  ^
+args-create.1.c:3066:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:3069:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_443);
+  ^
+args-create.1.c:3069:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:3095:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 16;
+                  ^
+args-create.1.c:3108:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_435);
+  ^
+args-create.1.c:3108:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:3110:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_433);
+  ^
+args-create.1.c:3110:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:3175:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_432);
+  ^
+args-create.1.c:3175:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:3178:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 17;
+                  ^
+args-create.1.c:3192:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_431);
+  ^
+args-create.1.c:3192:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:3197:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_430);
+  ^
+args-create.1.c:3197:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:3200:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 18;
+                  ^
+args-create.1.c:3214:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_422);
+  ^
+args-create.1.c:3214:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:3220:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_420);
+  ^
+args-create.1.c:3220:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:3223:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_158);
+  ^
+args-create.1.c:3223:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:3242:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_209);
+  ^
+args-create.1.c:3242:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:3253:24: warning: passing argument 1 of 'Word32_equal' makes integer from pointer without a cast
+  W32_0 = Word32_equal (P_0, S(Objptr, 16));
+                        ^
+In file included from /home/oem/pickle/take2/X86/build/lib/include/c-chunk.h:220:0,
+                 from args-create.1.c:131:
+/home/oem/pickle/take2/X86/build/lib/include/basis/Word/Word-ops.h:14:8: note: expected 'Word32' but argument is of type 'Objptr'
+   Bool Word##kind##_##name (Word##kind w1, Word##kind w2) {             \
+        ^
+/home/oem/pickle/take2/X86/build/lib/include/basis/Word/Word-ops.h:67:1: note: in expansion of macro 'compare'
+ compare (size, equal, ==)                       \
+ ^
+/home/oem/pickle/take2/X86/build/lib/include/basis/Word/Word-ops.h:97:1: note: in expansion of macro 'all'
+ all (32)
+ ^
+In file included from args-create.1.c:131:0:
+/home/oem/pickle/take2/X86/build/lib/include/c-chunk.h:47:18: warning: passing argument 2 of 'Word32_equal' makes integer from pointer without a cast
+ #define S(ty, i) *(ty*)(StackTop + (i))
+                  ^
+args-create.1.c:3253:29: note: in expansion of macro 'S'
+  W32_0 = Word32_equal (P_0, S(Objptr, 16));
+                             ^
+In file included from /home/oem/pickle/take2/X86/build/lib/include/c-chunk.h:220:0,
+                 from args-create.1.c:131:
+/home/oem/pickle/take2/X86/build/lib/include/basis/Word/Word-ops.h:14:8: note: expected 'Word32' but argument is of type 'Objptr'
+   Bool Word##kind##_##name (Word##kind w1, Word##kind w2) {             \
+        ^
+/home/oem/pickle/take2/X86/build/lib/include/basis/Word/Word-ops.h:67:1: note: in expansion of macro 'compare'
+ compare (size, equal, ==)                       \
+ ^
+/home/oem/pickle/take2/X86/build/lib/include/basis/Word/Word-ops.h:97:1: note: in expansion of macro 'all'
+ all (32)
+ ^
+args-create.1.c:3254:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_206);
+  ^
+args-create.1.c:3254:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:3258:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_2, L_199);
+  ^
+args-create.1.c:3258:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:3260:17: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 0) = 27;
+                 ^
+args-create.1.c:3266:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 32;
+                  ^
+args-create.1.c:3273:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_2, L_203);
+  ^
+args-create.1.c:3273:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:3277:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_2, L_202);
+  ^
+args-create.1.c:3277:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:3290:17: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 0) = 27;
+                 ^
+args-create.1.c:3296:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 20;
+                  ^
+args-create.1.c:3301:17: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 0) = 27;
+                 ^
+args-create.1.c:3307:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 20;
+                  ^
+args-create.1.c:3350:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_417);
+  ^
+args-create.1.c:3350:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:3367:17: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 0) = 27;
+                 ^
+args-create.1.c:3373:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 38;
+                  ^
+args-create.1.c:3392:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 63;
+                  ^
+args-create.1.c:3419:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 62;
+                  ^
+args-create.1.c:3440:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_429);
+  ^
+args-create.1.c:3440:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:3443:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 52) = 80;
+                  ^
+args-create.1.c:3457:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_428);
+  ^
+args-create.1.c:3457:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:3476:17: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 0) = 28;
+                 ^
+args-create.1.c:3482:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 12) = 30;
+                  ^
+args-create.1.c:3517:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 81;
+                  ^
+args-create.1.c:3533:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 82;
+                  ^
+args-create.1.c:3546:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_442);
+  ^
+args-create.1.c:3546:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:3548:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_440);
+  ^
+args-create.1.c:3548:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:3560:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 83;
+                  ^
+args-create.1.c:3583:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_464);
+  ^
+args-create.1.c:3583:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:3587:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_462);
+  ^
+args-create.1.c:3587:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:3593:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_461);
+  ^
+args-create.1.c:3593:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:3600:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_460);
+  ^
+args-create.1.c:3600:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:3603:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 20) = 84;
+                  ^
+args-create.1.c:3617:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_459);
+  ^
+args-create.1.c:3617:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:3619:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_457);
+  ^
+args-create.1.c:3619:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:3639:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 28) = 86;
+                  ^
+args-create.1.c:3667:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 12) = 88;
+                  ^
+args-create.1.c:3681:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 52) = 93;
+                  ^
+args-create.1.c:3695:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 52) = 94;
+                  ^
+args-create.1.c:3712:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_471);
+  ^
+args-create.1.c:3712:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:3743:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 68) = 97;
+                  ^
+args-create.1.c:3771:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_484);
+  ^
+args-create.1.c:3771:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:3802:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 68) = 96;
+                  ^
+args-create.1.c:3830:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_497);
+  ^
+args-create.1.c:3830:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:3861:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 68) = 95;
+                  ^
+args-create.1.c:3890:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_530);
+  ^
+args-create.1.c:3890:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:3894:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_528);
+  ^
+args-create.1.c:3894:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:3900:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_527);
+  ^
+args-create.1.c:3900:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:3907:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_526);
+  ^
+args-create.1.c:3907:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:3910:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 20) = 85;
+                  ^
+args-create.1.c:3924:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_525);
+  ^
+args-create.1.c:3924:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:3926:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_523);
+  ^
+args-create.1.c:3926:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:3946:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 28) = 87;
+                  ^
+args-create.1.c:3974:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 12) = 92;
+                  ^
+args-create.1.c:3991:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 36) = 98;
+                  ^
+args-create.1.c:4006:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 36) = 99;
+                  ^
+args-create.1.c:4022:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 28) = 100;
+                  ^
+args-create.1.c:4049:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_551);
+  ^
+args-create.1.c:4049:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:4051:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_547);
+  ^
+args-create.1.c:4051:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:4092:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_555);
+  ^
+args-create.1.c:4092:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:4096:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 20) = 101;
+                  ^
+args-create.1.c:4115:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 28) = 11;
+                  ^
+args-create.1.c:4126:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 36) = 102;
+                  ^
+args-create.1.c:4189:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_372);
+  ^
+args-create.1.c:4189:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:4192:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_371);
+  ^
+args-create.1.c:4192:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:4213:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 42;
+                  ^
+args-create.1.c:4226:17: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 0) = 25;
+                 ^
+args-create.1.c:4229:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 39;
+                  ^
+args-create.1.c:4243:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_414);
+  ^
+args-create.1.c:4243:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:4250:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_396);
+  ^
+args-create.1.c:4250:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:4254:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_394);
+  ^
+args-create.1.c:4254:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:4260:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_393);
+  ^
+args-create.1.c:4260:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:4267:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_392);
+  ^
+args-create.1.c:4267:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:4270:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 71;
+                  ^
+args-create.1.c:4284:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_391);
+  ^
+args-create.1.c:4284:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:4286:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_389);
+  ^
+args-create.1.c:4286:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:4308:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 76;
+                  ^
+args-create.1.c:4338:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 72;
+                  ^
+args-create.1.c:4356:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_412);
+  ^
+args-create.1.c:4356:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:4362:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_411);
+  ^
+args-create.1.c:4362:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:4369:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_410);
+  ^
+args-create.1.c:4369:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:4372:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 73;
+                  ^
+args-create.1.c:4386:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_409);
+  ^
+args-create.1.c:4386:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:4388:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_407);
+  ^
+args-create.1.c:4388:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:4405:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 54;
+                  ^
+args-create.1.c:4435:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 74;
+                  ^
+args-create.1.c:4465:17: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 0) = 27;
+                 ^
+args-create.1.c:4468:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 41;
+                  ^
+args-create.1.c:4492:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_367);
+  ^
+args-create.1.c:4492:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:4495:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 78;
+                  ^
+args-create.1.c:4514:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 40;
+                  ^
+args-create.1.c:4524:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_340);
+  ^
+args-create.1.c:4524:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:4526:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_339);
+  ^
+args-create.1.c:4526:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:4536:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_331);
+  ^
+args-create.1.c:4536:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:4541:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 43;
+                  ^
+args-create.1.c:4550:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 51;
+                  ^
+args-create.1.c:4561:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_360);
+  ^
+args-create.1.c:4561:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:4565:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_358);
+  ^
+args-create.1.c:4565:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:4571:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_357);
+  ^
+args-create.1.c:4571:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:4578:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_356);
+  ^
+args-create.1.c:4578:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:4581:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 70;
+                  ^
+args-create.1.c:4595:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_355);
+  ^
+args-create.1.c:4595:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:4597:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_353);
+  ^
+args-create.1.c:4597:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:4617:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 75;
+                  ^
+args-create.1.c:4645:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 69;
+                  ^
+args-create.1.c:4674:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 52;
+                  ^
+args-create.1.c:4688:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_337);
+  ^
+args-create.1.c:4688:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:4691:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 68;
+                  ^
+args-create.1.c:4710:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 44;
+                  ^
+args-create.1.c:4733:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_2, L_268);
+  ^
+args-create.1.c:4733:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:4739:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_326);
+  ^
+args-create.1.c:4739:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:4742:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 55;
+                  ^
+args-create.1.c:4756:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_318);
+  ^
+args-create.1.c:4756:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:4762:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_316);
+  ^
+args-create.1.c:4762:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:4765:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_274);
+  ^
+args-create.1.c:4765:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:4781:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 37;
+                  ^
+args-create.1.c:4785:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 64;
+                  ^
+args-create.1.c:4805:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_325);
+  ^
+args-create.1.c:4805:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:4808:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 52) = 65;
+                  ^
+args-create.1.c:4822:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_324);
+  ^
+args-create.1.c:4822:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:4855:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 46;
+                  ^
+args-create.1.c:4870:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_312);
+  ^
+args-create.1.c:4870:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:4886:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_307);
+  ^
+args-create.1.c:4886:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:4893:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_305);
+  ^
+args-create.1.c:4893:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:4896:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 58;
+                  ^
+args-create.1.c:4911:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_297);
+  ^
+args-create.1.c:4911:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:4913:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_295);
+  ^
+args-create.1.c:4913:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:4924:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 19;
+                  ^
+args-create.1.c:4928:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 59;
+                  ^
+args-create.1.c:4954:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 60;
+                  ^
+args-create.1.c:4989:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 61;
+                  ^
+args-create.1.c:5005:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_302);
+  ^
+args-create.1.c:5005:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:5044:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_278);
+  ^
+args-create.1.c:5044:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:5058:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_315);
+  ^
+args-create.1.c:5058:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:5061:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 57;
+                  ^
+args-create.1.c:5099:17: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 0) = 24;
+                 ^
+args-create.1.c:5102:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 48;
+                  ^
+args-create.1.c:5110:17: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 0) = 27;
+                 ^
+args-create.1.c:5113:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 45;
+                  ^
+args-create.1.c:5128:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 50;
+                  ^
+args-create.1.c:5135:17: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 0) = 26;
+                 ^
+args-create.1.c:5138:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 12) = 23;
+                  ^
+args-create.1.c:5146:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 21;
+                  ^
+args-create.1.c:5156:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_2, L_251);
+  ^
+args-create.1.c:5156:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:5159:17: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 0) = 27;
+                 ^
+args-create.1.c:5162:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 47;
+                  ^
+args-create.1.c:5169:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_2, L_255);
+  ^
+args-create.1.c:5169:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:5176:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_2, L_259);
+  ^
+args-create.1.c:5176:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:5186:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_264);
+  ^
+args-create.1.c:5186:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:5189:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 53;
+                  ^
+args-create.1.c:5202:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 49;
+                  ^
+args-create.1.c:5209:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_327);
+  ^
+args-create.1.c:5209:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:5212:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 66;
+                  ^
+args-create.1.c:5224:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_329);
+  ^
+args-create.1.c:5224:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:5227:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 67;
+                  ^
+args-create.1.c:5241:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_361);
+  ^
+args-create.1.c:5241:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:5244:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 56;
+                  ^
+args-create.1.c:5256:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_363);
+  ^
+args-create.1.c:5256:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:5259:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 77;
+                  ^
+args-create.1.c:5277:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_220);
+  ^
+args-create.1.c:5277:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:5286:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_1, L_415);
+  ^
+args-create.1.c:5286:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:5289:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 79;
+                  ^
+args-create.1.c:5319:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 36;
+                  ^
+args-create.1.c:5327:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 35;
+                  ^
+args-create.1.c:5335:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 34;
+                  ^
+args-create.1.c:5343:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 44) = 33;
+                  ^
+args-create.1.c:5365:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 12) = 29;
+                  ^
+args-create.1.c:5385:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 12) = 22;
+                  ^
+args-create.1.c:5392:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_180);
+  ^
+args-create.1.c:5392:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:5395:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 20) = 31;
+                  ^
+args-create.1.c:5446:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_562);
+  ^
+args-create.1.c:5446:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:5448:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (W32_0, L_562);
+  ^
+args-create.1.c:5448:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:5451:18: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 12) = 91;
+                  ^
+args-create.1.c:5463:17: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 4) = 7;
+                 ^
+args-create.1.c:6607:17: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 4) = 6;
+                 ^
+args-create.1.c:6617:17: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 4) = 5;
+                 ^
+args-create.1.c:6627:17: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 4) = 4;
+                 ^
+args-create.1.c:6697:17: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 4) = 3;
+                 ^
+args-create.1.c:6934:17: warning: assignment makes pointer from integer without a cast
+  S(CPointer, 4) = 8;
+                 ^
+args-create.1.c:6952:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (G(Word32, 0), L_9);
+  ^
+args-create.1.c:6952:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+args-create.1.c:6955:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+  BNZ (G(Word32, 2), L_9);
+  ^
+args-create.1.c:6955:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Word32' [-Wformat=]
+In file included from args-create.1.c:131:0:
+/home/oem/pickle/take2/X86/build/lib/include/c-chunk.h:126:25: warning: label 'leaveChunk' defined but not used [-Wunused-label]
+                         leaveChunk:                                     \
+                         ^
+args-create.1.c:6966:1: note: in expansion of macro 'EndChunk'
+ EndChunk
+ ^
+args-create.1.c:1437:6: warning: 'P_0' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  P_2 = O(Objptr, P_0, 4);
+      ^

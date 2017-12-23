@@ -1,6 +1,6 @@
 PATH := ../bin:$(shell echo $$PATH)
 
-CC := gcc -std=gnu99
+CC := $(TARGET)-gcc -std=gnu99
 CFLAGS := -Wall
 
 EXE :=

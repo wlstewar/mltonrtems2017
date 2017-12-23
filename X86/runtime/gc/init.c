@@ -336,7 +336,7 @@ int GC_init (GC_state s, int argc, char **argv) {
   worldFile = NULL;
 
   unless (isAligned (s->sysvals.pageSize, CARD_SIZE))
-    die ("Page size must be a multiple of card size.");
+    die ("Page size must be a multiple of card size:  %d, %d.", s->sysvals.pageSize, CARD_SIZE);
   processAtMLton (s, 0, s->atMLtonsLength, s->atMLtons, &worldFile);
   res = processAtMLton (s, 1, argc, argv, &worldFile);
   if (s->controls.fixedHeap > 0 and s->controls.maxHeap > 0)
@@ -353,8 +353,13 @@ int GC_init (GC_state s, int argc, char **argv) {
    * slightly off.
    */
   uintmax_t ram;
-  ram = alignMax ((uintmax_t)(s->controls.ratios.ramSlop * (double)(s->sysvals.physMem)),
-                  (uintmax_t)(s->sysvals.pageSize));
+  float temp0 = (s->controls.ratios.ramSlop);
+  uintmax_t temp1 = (uintmax_t)(temp0);
+  double    temp2 = (double)(s->sysvals.physMem);
+  uintmax_t temp3 = (uintmax_t)(s->sysvals.pageSize);
+  ram = alignMax ((uintmax_t)(s->controls.ratios.ramSlop) * (double)(s->sysvals.physMem), (uintmax_t)(s->sysvals.pageSize));
+  
+  
   ram = min (ram, alignMaxDown((uintmax_t)SIZE_MAX, (uintmax_t)(s->sysvals.pageSize)));
   s->sysvals.ram = (size_t)ram;
   if (DEBUG or DEBUG_RESIZING or s->controls.messages)
