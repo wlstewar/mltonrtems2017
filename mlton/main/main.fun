@@ -1151,6 +1151,7 @@ fun commandLine (args: string list): unit =
              NONE => (case !codegen of
                          AMD64Codegen => ChunkPerFunc
                        | CCodegen => Coalesce {limit = 4096}
+                       | RtemsCodegen => Coalesce {limit = 4096}
                        | LLVMCodegen => Coalesce {limit = 4096}
                        | X86Codegen => ChunkPerFunc
                        )

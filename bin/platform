@@ -40,6 +40,9 @@ CYGWIN*)
 Darwin)
         HOST_OS='darwin'
 ;;
+Rtems)
+        HOST_OS='rtems'
+;;
 *FreeBSD*)
         HOST_OS='freebsd'
 ;;

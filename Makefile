@@ -163,6 +163,7 @@ clean-git:
 
 .PHONY: compiler
 compiler:
+	$(MAKE) -C "$(SRC)/mlton/codegen/c-codegen"
 	$(MAKE) -C "$(SRC)/mlton" MLTON_OUTPUT=mlton-compile
 ifeq (true, $(CHECK_FIXPOINT))
 	$(DIFF) -b "$(SRC)/mlton/mlton-compile$(EXE)" "$(LIB)/mlton-compile$(EXE)"
