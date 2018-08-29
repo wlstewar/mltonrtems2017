@@ -1,0 +1,2 @@
+All socket, unixsock, and nethostdb were stripped from the basis library.
+References to these structures were removed from basis-ffi.def as well.
