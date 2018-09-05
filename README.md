@@ -9,7 +9,7 @@ This is a port of MLton to RTEMS X86.
 2. RTEMS lacks mmap support, it's implemented in terms of malloc. mumap is... well,
    left unimplemented, which means MLton WILL suffer memory leak if it tries to
    deallocate heaps (fortunately not too common).
-3. Network related APIs are all disabled due to lack of support in RTEMS and there
+3. Network related APIs are all removed (deleted from basis-library/*) due to lack of support in RTEMS and there
    does not seem to be a trivial way to fix it.
 
 ## Compiling:
